@@ -1,7 +1,7 @@
 ## RBC-Tracking - Lilly Roelofs - 12/5/2020
 
 ### Synopsis
-This extra credit project was given in one of my sophomore level biomedical engineering classes. Given a 1200-frame video of red blood cells (RBCs) undergoing a washing procedure, we were asked to detect and track the set of cells in one of the wells. My approach to this was extracting ground truth images of 2 classes from the video: RBCs and not RBCs (i.e. well walls, empty space, portion of an RBC). From here, I utilized a HOG feature extractor and trained an SVM classifier to detect whether an image was classified as an RBC or not. Following this I built several functions to track the RBCs between frames, which are shown in *SuperProjectMain.m* and discussed below. 
+This extra credit project was given in one of my sophomore level biomedical engineering classes. Given a 1200-frame video of red blood cells (RBCs) undergoing a washing procedure, we were asked to detect and track the set of cells in one of the wells. My approach to this was extracting ground truth images of 2 classes from the video: RBCs and not RBCs (i.e. well walls, empty space, portion of an RBC). From here, I utilized a HOG feature extractor and trained an SVM classifier to detect whether an image was classified as an RBC or not. Following this I built a few functions for the tracking the RBCs between frames, which are shown in *SuperProjectMain.m* and discussed below. 
 
 The second part of the assignment was to draw conclusions about the nature of diffusion by calculating the difference in position for each RBC between frames. By creating a histogram plot of the cell position differences, it was clear they followed a normal distribution, confirming that they were undergoing random motion.
 
